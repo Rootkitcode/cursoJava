@@ -106,9 +106,54 @@ public class Operadores {
 		 
 		 var wq = cadena.equals(cadena2);
 		 System.out.println(" wq = " + wq);
+		 
+		 //operadores condicionales
+		 var jk = 10;
+		 var min = 0;
+		 var max = 10;
+		 var resultado3 = jk >= 0 && jk <= 10;
+		 if(resultado3 == true) {
+			 System.out.println("dentro del rango");
+			 
+		 }
+		 else {
+			
+			System.out.println("fuera de rango");
+		 }
+		 var vacaciones = false;
+		 var diaDescanso = true;
+		 
+		 if(vacaciones || diaDescanso) {
+			 System.out.println("El padre puede asistir al juego de su hijo");
+		 }
+		 else {
+			System.out.println("El padre no puede asistir al juego de su hijo");
+		}
+		 
+		 //operador ternario
+		 var resultado4 = (1 > 2) ? "verdadero": "falso";
+		 System.out.println("resultado = " + resultado4);
+		 
+		 var nume = 11;
+		 resultado4 = (nume % 2 == 0) ? "numero par" : "numero impar";
+		 System.out.println("resultado = " + resultado4);
+		 
+		 
+		 //presedencia operadores
+		 var xx = 5;
+		 var yy = 10;
+		 var zz = ++xx + yy--;
+		 System.out.println("xx = " + xx);
+		 System.out.println("yy = " + yy);
+		 System.out.println("zz = " + zz);
+		 
+		 
+		}
+	
+		
+
 		
 
 	}
 
 	
-}
