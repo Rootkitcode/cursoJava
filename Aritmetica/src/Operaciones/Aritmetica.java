@@ -5,9 +5,21 @@ public class Aritmetica {
 	int a;
 	int b;
 	
+	//constructor vacio
+	public Aritmetica() {
+		System.out.println("Ejecutando constructor");
+	}
+	
+	public Aritmetica(int a, int b) {
+		this.a = a;
+		this.b = b;
+		System.out.println("Ejecutando constructor con argumentos");
+		
+	}
+	
 	//metodo
 	public void sumar() {
-		int resultado = a + b;
+		int resultado = this.a + this.b;
 		System.out.println("resultado de la suma = " + resultado);
 	}
 	
@@ -17,10 +29,10 @@ public class Aritmetica {
 		
 	}
 	
-	//metodo con argumentos
+	//metodo con argumentos 
 	public int sumarConArgumentos(int arg1, int arg2) {
-		a = arg1;
-		b = arg2;
+		this.a = arg1; //this es opcional pero nos deja identificar o referenciar el objeto actual
+		this.b = arg2;
 		return a + b;
 		
 	}
