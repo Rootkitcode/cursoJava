@@ -11,14 +11,20 @@ public class pasoPorReferencia {
 		// TODO Auto-generated method stub
 		Persona persona1 = new Persona();persona1.nombre = "ppe";
 		System.out.println("nombre = " + persona1.nombre);
-		cambiaValor(persona1);
+		persona1 = cambiaValor(persona1);
 		System.out.println("persona1 cambio valor = " + persona1.nombre);
 	}
 	
 
 
-		public static void  cambiaValor(Persona persona) {
+		public static Persona  cambiaValor(Persona persona) {
+			if(persona == null) {
+				System.out.println("valor de persona invalido : null");
+				return persona;
+			}
 			persona.nombre ="juana";
+			
+			return persona;
 			
 		}
 
