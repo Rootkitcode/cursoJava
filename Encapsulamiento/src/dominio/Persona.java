@@ -37,5 +37,11 @@ public class Persona {
 	public void setEliminado(boolean eliminado) {
 		this.eliminado = eliminado;
 	}
+	
+	public String toString() {
+		return "persona [nombre: " + this.nombre +
+				" , sueldo: " + this.sueldo +
+				", eliminado: " + this.eliminado + "]";
+	}
 
 }

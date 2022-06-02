@@ -12,6 +12,8 @@ public class PersonaPrueba {
 		System.out.println("nombre con cambio: " + persona1.getNombre());
 		System.out.println("sueldo: " + persona1.getSueldo() );
 		System.out.println("eliminado: " + persona1.isEliminado());
+		System.out.println("*************************************");
+		System.out.println("persona1: " + persona1.toString());
 
 	}
 
