@@ -3,7 +3,7 @@ package domain;
 public class Persona {
 	
 	protected String nombre;
-	protected char genero;
+	protected String genero;
 	protected int edad;
 	protected String direccion;
 	
@@ -15,7 +15,7 @@ public class Persona {
 		this.nombre = nombre;
 	}
 	//constructor
-	public Persona(String nombre, char genero, int edad, String direccion) {
+	public Persona(String nombre, String genero, int edad, String direccion) {
 		this.nombre = nombre;
 		this.genero = genero;
 		this.edad = edad;
@@ -36,11 +36,11 @@ public class Persona {
 		
 	}
 	
-	public char getGenero() {
+	public String getGenero() {
 		return this.genero;
 	}
 	
-	public void setGenero(char genero) {
+	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 	
