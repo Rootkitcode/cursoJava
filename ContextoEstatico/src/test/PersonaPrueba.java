@@ -12,7 +12,14 @@ public class PersonaPrueba {
 		Persona persona2 = new Persona("carlos");
 		System.out.println("persona 2: " + persona2.toString());
 		
+		imprimir(persona2);
+		
 
+	}
+	
+	public static void imprimir(Persona persona) {
+		System.out.println("persona imprimir: " + persona);
+		
 	}
 
 }
