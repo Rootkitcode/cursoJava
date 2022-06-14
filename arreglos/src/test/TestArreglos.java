@@ -14,6 +14,11 @@ public class TestArreglos {
 		for ( int contador = 0; contador < edades.length; contador++) {
 			System.out.println("edades elemento = " + contador + ": " + edades[contador]);
 		}
+		String animales[] = {"perro", "gato", "aves", "peces"};
+		for (int i = 0; i < animales.length; i++) {
+			System.out.println("animales lista de objetos = " + animales[i]);
+			
+		}
 		
 	
 	}
