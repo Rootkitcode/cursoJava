@@ -2,6 +2,9 @@ package test;
 
 
 
+import java.security.PublicKey;
+
+import enumeracion.Continentes;
 import enumeracion.Dias;
 
 public class TestEnumeraciones {
@@ -10,6 +13,9 @@ public class TestEnumeraciones {
 		// TODO Auto-generated method stub
 		System.out.println("Dia de la semana 1: " + Dias.LUNES);
 		indicarDiaDeLaSemana(Dias.MARTES);
+		
+		System.out.println("Continente N° 4: " + Continentes.OSEANIA);
+		System.out.println("N° paises en el continente N° 4: " + Continentes.OSEANIA.getPaises());
 
 	}
 	private static void indicarDiaDeLaSemana(Dias dias) {
@@ -36,6 +42,7 @@ public class TestEnumeraciones {
 			System.out.println("Septimo dia de la semana");
 			throw new IllegalArgumentException("Unexpected value: " + dias);
 		}
+		
 	}
 
 }
