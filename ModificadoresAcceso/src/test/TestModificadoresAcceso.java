@@ -3,6 +3,7 @@ package test;
 import paquete1.Clase1;
 import paquete2.Clase2;
 import paquete3.ClaseHija;
+import paquete5.Clase5;
 
 public class TestModificadoresAcceso {
 
@@ -17,6 +18,10 @@ public class TestModificadoresAcceso {
 		ClaseHija claseHija = new ClaseHija();
 		System.out.println("Clase hija: " + claseHija);
 		
+		
+		Clase5 clase5 = new Clase5("Publico");
+		clase5.setAtributoPrivadoString("atributo privado modificado con set");
+		System.out.println("clase5: " + clase5.getAtributoPrivadoString());
 		
 
 	}
